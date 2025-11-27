@@ -9,13 +9,13 @@ It allows you to display values from a **Database activity (mod_data)** in a cer
 ## Features
 - Fetches field values from a `mod_data` instance.
 - Displays selected field on generated certificates.
-- Supports only one single entry to `mod_data` per user. Falls back to placeholder text if multiple or no entries are found.
+- Depdening on needs you can either use the first or last database entry of the user or a concatenation of the field values.
 
 ---
 
 ## Requirements
-- Moodle version: 5.x or later
-- Certificate plugin installed and configured
+- Moodle version: 5.0 or later
+- Tool Certificate plugin installed and configured
 
 ---
 
@@ -30,10 +30,10 @@ Complete the installation process.
 
 ## Usage
 1. Create or edit a certificate template.
-2. Add the **Field from mod_data** element.
+2. Add the **Field from mod data** element.
 3. Configure:
 - Course module ID of the database activity
-- Name of the field to display must be unique for this database activity.
+- Name of the field to display **(must be unique for this database activity)**.
 4. Save and generate certificates.
 
 ---
@@ -41,11 +41,13 @@ Complete the installation process.
 ## Configuration Options
 - **Course Module ID**: The `cmid` of the database activity.
 - **Field Name**: Name of the unique field to include from the database activity.
+- **Behaviour**: Behaviour if multiple database entries are found. (First, Last, Concatanation)
+- **Delimiter**: Delimiter to use in moncatanation mode
 
 ---
 
 ## Changelog
-### v1.0.0
+### v0.0.1
 - Initial release
 - Basic functionality to fetch and display mod_data fields
 
