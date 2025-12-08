@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 // This plugin is part of Moodle Workplace product.
 $plugin->component    = 'certificateelement_fieldfrommoddata';
 $plugin->release      = '0.0.1';
-$plugin->version      = 20251126;
-$plugin->requires     = 2025041400.00;
+$plugin->version      = 2025120800;
+$plugin->requires     = 2022041900.00;
 $plugin->maturity     = MATURITY_STABLE;
