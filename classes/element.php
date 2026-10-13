@@ -174,7 +174,7 @@ class element extends \tool_certificate\element {
     /**
      * Format the field value data for the certificate element
      * @param array $fieldvalues array of values from mod data
-     * @param string $behaviour: String which defines how multiple entries are handeled
+     * @param string $behaviour String which defines how multiple entries are handeled
      * @param string $delimiter the delimiter to use
      * @return string String to place on the certificate
      */
