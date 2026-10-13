@@ -53,7 +53,7 @@ final class element_test extends advanced_testcase {
         $certificate1 = $this->get_generator()->create_template((object)['name' => 'Certificate 1']);
         $pageid = $this->get_generator()->create_page($certificate1)->get_id();
         $formdata = ['name' => 'Field element', 'moddataid' => '',
-            'fieldname' => '', ];
+            'fieldname' => '', 'behaviour' => 'First', 'delimiter' => ', '];
         $e = $this->get_generator()->create_element($pageid, 'fieldfrommoddata', $formdata);
         $this->assertNotEmpty($e->render_html());
 
